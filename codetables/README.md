@@ -6,5 +6,7 @@ These methods search for linear codes with optimal linear distance. First add so
 
 Please see instructions.py for a demonstration of how to use this class.
 
-
-
+# Note:
+I use the nonstandard term 'derived from' to mean 'obtained through code shortening or lengthening'. The results of these trivial transformations are:
+Shortening: [n,k,d] -> [n-s,k-s,d]
+Lengthening: [n,k,d] -> [n+s,k,d]
