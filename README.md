@@ -6,6 +6,7 @@ The parameter known as Hamming weight or minimum distance of a linear code is im
 
 The Sagemath coding theory library provides an extensive toolkit for working with linear codes. Some of these constructions already give information about codes and their minimal distances which can be used to attack this problem. This summer I have worked with Sage developers to add more helpful algorithms of this kind to the package. These enhancements have been rebased over the latest sage version. In addition, I have described an approach to the main problem using a Codetable class that applies several relevant methods to construct optimal linear codes for many choices of length and dimension.
 
+
 # Merged code
 Before attacking the main problem I decided to focus on smaller enhancements. These modifications have been rebased over the developer's latest work. My additions have focused on the two files that you can find at https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/code_constructions: linear_code.py and goppa_code.py
 
@@ -19,7 +20,7 @@ This implements a class for Goppa codes, a particular class of linear codes. The
 Moreover, some best Hamming weight known codes are Goppa codes (e.g. [55,19]). It inherits from the class for AbstractLinearCodes in sage/coding. The Sage notebook does not see it automatically so you need to use python's import to test this code.
 
 
-# Code not yet ready to be merged
-See https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/codetables
+# Codetables
+In this part of the project I have tried to use Sage's expanded toolset to find good constructions for linear codes. The purpose was to approach results similar to the ones obtained at www.codetables.de . Explanation and proof of concept code can be found in the directory https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/codetables.
 
 ## remarks, useful resources, challenges
