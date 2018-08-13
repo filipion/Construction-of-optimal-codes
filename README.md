@@ -31,7 +31,7 @@ https://github.com/filipion/optimal-linear-codes/tree/master/codetables
 This version is my current best attempt at the problem introduced in the summary. It appears to me that codetables.de generally uses constructions based on well informed choices of generator matrices for linear codes, generator polynomials for cyclic/quasi-cyclic codes. I do not fully understand how the examples that beat my approach are found, however, I do not think they are based on a general algorithm. My mentor suggested that a method based on large sacle memorization works if the problem depends on various ad-hoc cases. This is the approach I have taken here.
 
 
-### Remarks, challenges, useful resources and acknowledgements
+# Remarks, challenges, useful resources and acknowledgements
 I have tested the codetable class in the case of binary codes with length smaller than 128. The distances I obtain are usually smaller than the best known (by about 15 at most. This increases with the length of the codes considered). Strangely, the performance is much better on odd numbers than even numbers. 
 
 
