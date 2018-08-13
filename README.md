@@ -30,10 +30,12 @@ This version is my current best attempt at the problem introduced in the summary
 I have tested the codetable class in the case of binary codes with length smaller than 128. The distances I obtain are usually smaller than the best known (by about 15 at most. This increases with the length of the codes considered). Strangely, the performance is much better on odd numbers than even numbers. 
 
 In the future the natural next step would be to add:
+
 -extended codes
+
 -construction_x with BCH codes
+
 -concatenated codes (not yet in sage)
-to the codetables' functionality.
 
 Here are the resources I have found most useful:
 
