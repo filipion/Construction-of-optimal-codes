@@ -8,7 +8,7 @@ The Sagemath coding theory library provides an extensive toolkit for working wit
 
 
 # Merged code
-Before attacking the main problem I decided to focus on smaller enhancements. These modifications have been rebased over the developer's latest work. My additions have focused on the two files that you can find at https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/code_constructions: linear_code.py and goppa_code.py
+Before attacking the main problem I decided to focus on smaller enhancements. These modifications have been rebased over the developer's latest work. My additions have focused on the two files that you can find at https://github.com/filipion/Construction-of-optimal-codes/tree/master/code_constructions: linear_code.py and goppa_code.py
 
 ## linear_code.py
 This is a modified version of the Sage source file with the same name in src/sage/coding. The latest commit shows 4 added methods for the AbstractLinearCode class: juxtaposition, u_u_plus_v_construction, product_code and construction_x. I have added these because they all give good constraints on the minimum distance of codes made using them. My Codetables implementation currently depends on the first two of these methods.
@@ -21,7 +21,7 @@ Moreover, some best Hamming weight known codes are Goppa codes (e.g. [55,19]). I
 
 
 # Codetables
-In this part of the project I have tried to use Sage's expanded toolset to find good constructions for linear codes. The purpose was to approach results similar to the ones obtained at www.codetables.de . Explanation and proof of concept code can be found in the directory https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/codetables.
+In this part of the project I have tried to use Sage's expanded toolset to find good constructions for linear codes. The purpose was to approach results similar to the ones obtained at www.codetables.de . Explanation and proof of concept code can be found in the directory https://github.com/filipion/Construction-of-optimal-codes/tree/master/codetables.
 
 This version is my current best attempt at the problem introduced in the summary. It appears to me that codetables.de generally uses constructions based on well informed choices of generator matrices for linear codes, generator polynomials for cyclic/quasi-cyclic codes. I do not fully understand how the examples that beat my approach are found, however, I do not think they are based on a general algorithm. My mentor suggested that a method based on large sacle memorization works if the problem depends on various ad-hoc cases. This is the approach I have taken here.
 
