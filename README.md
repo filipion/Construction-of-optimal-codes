@@ -29,6 +29,7 @@ This version is my current best attempt at the problem introduced in the summary
 # Remarks, challenges, useful resources and acknowledgements
 I have tested the codetable class in the case of binary codes with length smaller than 128. The distances I obtain are usually smaller than the best known (by about 15 at most. This increases with the length of the codes considered). Strangely, the performance is much better on odd numbers than even numbers. 
 
+
 In the future the natural next step would be to add:
 
 -extended codes
@@ -36,6 +37,7 @@ In the future the natural next step would be to add:
 -construction_x with BCH codes
 
 -concatenated codes (not yet in sage)
+
 
 Here are the resources I have found most useful:
 
@@ -51,6 +53,7 @@ This roadmap has provided me with guidance on what problems to approach
 https://wiki.sagemath.org/Coding_Theory
 
 Introduction to Coding Theory by Van Lint and the online notes at http://www.win.tue.nl/~ruudp/lectures.html have proved to me very useful on the theoretical front.
+
 
 I would like to thank my mentor, Sagemath developers, the authors of the resources above and Google Summer of Code for the many ways they have helped me with this project.
 
