@@ -17,22 +17,23 @@ With the exception of these four methods the rest of the code in linear_code.py 
 
 ## goppa_code.py
 This implements a class for Goppa codes, a particular class of linear codes. They are present on the Sagemath future roadmap for coding theory.
-Moreover, some best Hamming weight known codes are Goppa codes (e.g. [55,19]). It inherits from the class for AbstractLinearCodes in sage/coding. The Sage notebook does not see it automatically so you need to use python's import to test this code.
+Moreover, some best Hamming weight known codes are Goppa codes (e.g. [55,19]). It inherits from the class for AbstractLinearCodes in sage/coding. The Sage notebook does not see it automatically so python's import is needed to test this code.
 
 
 # Codetables
 In this part of the project I have tried to use Sage's expanded toolset to find good constructions for linear codes. The purpose was to approach results similar to the ones obtained at www.codetables.de . Explanation and proof of concept code can be found in the directory https://github.com/filipion/Construction-of-optimal-linear-codes/tree/master/codetables.
 
-This version is my current best attempt at the problem introduced in the summary. It appears to me that codetables.de generally uses constructions based on well informed choices of generator matrices for linear codes, generator polynomials for cyclic/quasi-cyclic codes. I do not fully understand how the examples that beat my approach are found, however, I do not think they are based on a general algorithm. My mentor suggested a method based on large sacle memorization works, provided that the problem depends on various ad-hoc cases. This is the approach I have taken here.
+This version is my current best attempt at the problem introduced in the summary. It appears to me that codetables.de generally uses constructions based on well informed choices of generator matrices for linear codes, generator polynomials for cyclic/quasi-cyclic codes. I do not fully understand how the examples that beat my approach are found, however, I do not think they are based on a general algorithm. My mentor suggested that a method based on large sacle memorization works if the problem depends on various ad-hoc cases. This is the approach I have taken here.
 
 
 # Remarks, challenges, useful resources and acknowledgements
-I have tested the codetable class on the case of binary codes with length smaller than 128. The distances I obtain are usually smaller than the best known by about 15. The performance is much better on odd numbers than even numbers, which seems strange. 
+I have tested the codetable class in the case of binary codes with length smaller than 128. The distances I obtain are usually smaller than the best known (by about 15 at most. This increases with the length of the codes considered). Strangely, the performance is much better on odd numbers than even numbers. 
 
-In the future it would be interesting to add:
+In the future the natural next step would be to add:
 -extended codes
 -construction_x with BCH codes
 -concatenated codes (not yet in sage)
+to the codetables' functionality.
 
 Here are the resources I have found most useful:
 
@@ -49,6 +50,6 @@ https://wiki.sagemath.org/Coding_Theory
 
 Introduction to Coding Theory by Van Lint and the online notes at http://www.win.tue.nl/~ruudp/lectures.html have proved to me very useful on the theoretical front.
 
-I would like to thank Google Summer of Code, my mentor and Sagemath developers and the authors of the resources above for the many ways they have helped me with this project.
+I would like to thank my mentor, Sagemath developers, the authors of the resources above and Google Summer of Code for the many ways they have helped me with this project.
 
 
