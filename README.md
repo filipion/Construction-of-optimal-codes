@@ -12,18 +12,20 @@ Before attacking the main problem I decided to focus on smaller enhancements. Th
 
 
 ## linear_code.py
-This is a modified version of the Sage source file with the same name in src/sage/coding. The latest commit shows 4 added methods for the AbstractLinearCode class: juxtaposition, u_u_plus_v_construction, product_code and construction_x. I have added these because they all give good constraints on the minimum distance of codes made using them. My Codetables implementation currently depends on the first two of these methods.
+This is a modified version of the Sage source file with the same name in src/sage/coding. The latest commit shows 4 added methods for the AbstractLinearCode class: juxtaposition, u_u_plus_v_construction, product_code and construction_x. I have added these because they all give good constraints on the minimum distance of codes made using them. My Codetables implementation currently depends on the first two of these methods. 
 
 All of these methods are based on constructing a generator matrix from the matrices of some smaller components and then make use of LinearCode to construct a generic code with such a matrix. For their implementation, I just used Sagemath methods to manipulate matrices.
 
 With the exception of these four methods the rest of the code in linear_code.py was already present in sage and represents the work of other developers.
 
+The development of this part of the project is tied to [trac ticket 25982](https://trac.sagemath.org/ticket/25982).
+
 ## goppa_code.py
 This implements a class for Goppa codes, a particular class of linear codes. They are present on the Sagemath future roadmap for coding theory. Moreover, some best Hamming weight known codes are Goppa codes (e.g. (55,19)). Goppa codes are defined by constructing a parity check matrix. The determinants of submatrices of this matrix are nonvanishing Vandermonde determinants. Because of this, the resulting codes have provably high minimum distance. If the generator polynomial has no double roots, 2 * (degree of g) + 1 is a lower bound for the Hamming weight.
 
-The implementation of the construction algorithm is straightforward. One interesting detail is that the algorithm needed a way to represent elements of a q^^m finite field as column vectors over q, for q prime. This [trac ticket](https://trac.sagemath.org/ticket/20284#no1) from 2016 provides the method I needed to manage embedded finite fields.
+The implementation of the construction algorithm is straightforward. One interesting detail is that the algorithm needed a way to represent elements of a q^^m finite field as column vectors over q, for q prime. This [trac ticket](https://trac.sagemath.org/ticket/20284#no1) from 2016 provides the method I needed to manage embedded finite fields. This file inherits from the class for AbstractLinearCodes in sage/coding. The Sage notebook does not see it automatically so python's import is needed to test this code.
 
-This file inherits from the class for AbstractLinearCodes in sage/coding. The Sage notebook does not see it automatically so python's import is needed to test this code.
+The development of this part of the project is tied to [trac ticket 25977](https://trac.sagemath.org/ticket/25977).
 
 
 # Codetables
