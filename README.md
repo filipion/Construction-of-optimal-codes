@@ -75,6 +75,6 @@ Helpful links:
 * Introduction to Coding Theory by Van Lint and the online notes at [http://www.win.tue.nl/~ruudp/lectures.html](http://www.win.tue.nl/~ruudp/lectures.html) have proved to me very useful on the theoretical front.
 
 
-I would like to thank my mentor, Sagemath developers, the authors of the resources above and Google Summer of Code for the many ways they have helped me with this project.
+I would like to thank my mentor Dmitrii Pasechnik, Sagemath developers, the authors of the resources above and Google Summer of Code for the many ways they have helped me with this project.
 
 
