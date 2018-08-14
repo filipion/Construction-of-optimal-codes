@@ -45,15 +45,15 @@ Here are the resources I have found most useful:
 Helpful links:
 
 For the database of codes that I have compared my solutions against see
-(http://codetables.de/)
+[http://codetables.de/](http://codetables.de/)
 
 For an illustration of how some of the constructions I have implemented work towards the goal of the project see the lecture notes at
-(http://www.math.nus.edu.sg/~urops/Projects/BinaryCodes.pdf)
+[http://www.math.nus.edu.sg/~urops/Projects/BinaryCodes.pdf](http://www.math.nus.edu.sg/~urops/Projects/BinaryCodes.pdf)
 
 This roadmap has provided me with guidance on what problems to approach
-(https://wiki.sagemath.org/Coding_Theory)
+[https://wiki.sagemath.org/Coding_Theory](https://wiki.sagemath.org/Coding_Theory)
 
-Introduction to Coding Theory by Van Lint and the online notes at (http://www.win.tue.nl/~ruudp/lectures.html) have proved to me very useful on the theoretical front.
+Introduction to Coding Theory by Van Lint and the online notes at [http://www.win.tue.nl/~ruudp/lectures.html](http://www.win.tue.nl/~ruudp/lectures.html) have proved to me very useful on the theoretical front.
 
 
 I would like to thank my mentor, Sagemath developers, the authors of the resources above and Google Summer of Code for the many ways they have helped me with this project.
