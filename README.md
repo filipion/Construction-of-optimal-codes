@@ -45,7 +45,7 @@ The codetable class has several dictionaries that memorize lower bounds and cons
 2. Second stage:
    These are still simple but somewhat more involved constructions. They perform combinations of two codes. The instructions file suggests a how to use the class methods to build up good codes from simpler examples. Currently supported by the codetable class are:
   * juxtapositions
-  * Plotkin sums (or (u|u+v) constructions)
+  * Plotkin sums (or (u/u+v) constructions)
 
 When checking this out please make sure to also read [instructions.py](https://github.com/filipion/optimal-linear-codes/blob/master/codetables/instructions.py), for explanations and examples of how to use the code.
 
